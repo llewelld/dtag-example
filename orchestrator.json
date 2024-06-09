@@ -1,0 +1,26 @@
+{
+    "timestep": 1.0,
+    "world": {
+        "host": "http://localhost:8001",
+        "path": "/api/v1/world/update"
+    },
+    "visualise": {
+        "host": "http://localhost:8000",
+        "path": "/api/v1/visualise/render"
+    },
+    "players": [
+        {
+            "player_id": 1,
+            "team_id": 1,
+            "host": "http://localhost:8002",
+            "path": "/api/v1/player/update"
+        },
+        {
+            "player_id": 2,
+            "team_id": 1,
+            "host": "http://localhost:8003",
+            "path": "/api/v1/player/update"
+        }
+    ]
+}
+
