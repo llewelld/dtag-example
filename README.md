@@ -42,7 +42,7 @@ Key:
 
 Create a virtual environment and install the dependencies.
 
-```
+```sh
 python3 -m ven venv
 . ./venv/bin/activate
 pip install pip --upgrade
@@ -61,34 +61,34 @@ Ideally each server should be started in a different shell so that the output fo
 Each server can be provided with a single parameter: the filename of the configuration file to use.
 
 Start the Visualise Server:
-```
+```sh
 $ python3 visualise.py visualise.json
 ```
 
 Start the World Server:
-```
+```sh
 $ python3 world.py world.json
 ```
 
 Start the first Player Server:
-```
+```sh
 $ python3 player.py player01.json
 ```
 
 Start the second Player server:
-```
+```sh
 $ python3 player.py player02.json
 ```
 
 Finally, start the Orchestrator client:
-```
+```sh
 $ python3 orchestrator.py orchestrator.json
 ```
 
 ## Configuration files
 
 The Visualise, World and Player Servers all accept a JSON configuration file in the following form:
-```
+```json
 {
     "host": "<hostname>",
     "port": <port>
@@ -98,7 +98,7 @@ The Visualise, World and Player Servers all accept a JSON configuration file in 
 Servers which inhabit the same device must be run with different ports.
 
 The Orchestrator Client accepts a JSON configuration file in the following form:
-```
+```json
 {
     "timestep": 1.0,
     "world": {
